@@ -1,0 +1,41 @@
+.container {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.mobile-menu{
+    width: 250px;
+    height: 100vh;
+    background-color: #E17992;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition-property: transform;
+    transition-duration: 0.75s;
+    
+}
+@media(min-width:768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+.header {
+    background-color: #FFB8CA;
+
+}
+.is-hidden-mob {
+    transform: translateX(100%);
+
+}
